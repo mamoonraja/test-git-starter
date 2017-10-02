@@ -8,18 +8,31 @@
   "tags": ["watson"],
   "generators": {
     "node": [
-      "generator-starterkit-content-downloader",
-      "generator-ibm-cloud-enablement"
+      "generator-ibm-core-node-express",
+      "generator-ibm-service-enablement",
+      "generator-ibm-cloud-enablement",
+      "generator-usecase-enablement"
     ]
   },
   "generatorOptions": {
-    "generator-starterkit-content-downloader": {
+    "generator-ibm-cloud-enablement": {
+      "version": "0.0.97"
+    },
+    "generator-ibm-core-node-express": {
+      "version": "0.0.60"
+    },
+    "generator-core-python-flask": {
       "registry": "https://npm-registry.whitewater.ibm.com",
       "scope": "@arf",
-      "version": "latest"
+      "version": "0.0.32"
     },
-    "generator-ibm-cloud-enablement": {
-      "version": "latest"
+    "generator-ibm-service-enablement": {
+      "version": "0.0.85"
+    },
+    "generator-usecase-enablement": {
+      "registry": "https://npm-registry.whitewater.ibm.com",
+      "scope": "@arf",
+      "version": "0.0.36"
     }
   },
   "requiredCapabilities": ["conversation"],
