@@ -1,0 +1,29 @@
+{
+  "name": "test-git-starter",
+  "description": "Test Public demos StarterKit",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": ["watson"],
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement"
+    ]
+  },
+  "generatorOptions": {
+    "generator-starterkit-content-downloader": {
+      "registry": "https://npm-registry.whitewater.ibm.com",
+      "scope": "@arf",
+      "version": "latest"
+    },
+    "generator-ibm-cloud-enablement": {
+      "version": "latest"
+    }
+  },
+  "requiredCapabilities": ["conversation"],
+  "requiredCapabilitiesURLs": {"conversation": "https://www.ibm.com/watson/services/conversation/"},
+  "servicePlans": {"conversation": "free"},
+  "email": "cloud@us.ibm.com"
+}
